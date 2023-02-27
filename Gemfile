@@ -7,7 +7,7 @@ gem "sinatra", "~> 2.1"
 # An object-relational mapper
 # https://guides.rubyonrails.org/active_record_basics.html
 gem "activerecord", "~> 6.1"
-
+gem 'puma'
 # Configures common Rake tasks for working with Active Record
 # https://github.com/sinatra-activerecord/sinatra-activerecord
 gem "sinatra-activerecord"
@@ -41,7 +41,7 @@ end
 group :test do
   gem "database_cleaner"
   gem "rspec"
-  gem "rack-test", "~> 1.1"
+  gem "rack-test"
 end
 
 
